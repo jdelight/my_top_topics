@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import TopicsWrapper from '../components/topicsWrapper/TopicsWrapper';
 import Topics from '../components/topicsWrapper/topics/Topics';
 import Info from '../components/topicsWrapper/info/Info';
 
 const TopTopics = props => {
+
+    const [data, setData]=useState([]);
 
     const getData=()=>{
         fetch('topics.json', 
@@ -15,18 +17,16 @@ const TopTopics = props => {
             }
         )
         .then(function(response){
-            console.log(response)
             return response.json();
         })
-        .then(function(myJson) {
-            console.log(myJson);
+        .then(function(dataJson) {
+            setData(dataJson);
         });
     }
         
     useEffect(()=>{
         getData();
     },[])
-
 
     return (
         <TopicsWrapper>
