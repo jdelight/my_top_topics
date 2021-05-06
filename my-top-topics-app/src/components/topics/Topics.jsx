@@ -3,8 +3,6 @@ import './Topics.scss';
 
 const Topics = props => {
 
-    console.log(props);
-    
     return (
         <div className="topics">
             <h1>{props.title}</h1>

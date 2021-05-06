@@ -52,31 +52,31 @@ const TopTopics = props => {
             const score = data.sentimentScore,
                 id = data.id,
                 label = data.label,
-                f6 = fontRanges[0],
-                f5 = fontRanges[1],
-                f4 = fontRanges[2],
-                f3 = fontRanges[3],
-                f2 = fontRanges[4],
-                f1 = fontRanges[5];
+                f1 = fontRanges[0],
+                f2 = fontRanges[1],
+                f3 = fontRanges[2],
+                f4 = fontRanges[3],
+                f5 = fontRanges[4],
+                f6 = fontRanges[5];
 
             switch (true) {
-                case (score <= f6.range):
-                    return <p key={id} className={f6.colour}>{label}</p>
+                case (score <= f1.range):
+                    return <p key={id} className={f1.colour}>{label}</p>
                     break;
-                case (score > f6.range && score <= f5.range):
-                    return <h6 key={id} className={f5.colour}>{label}</h6>
+                case (score > f1.range && score <= f2.range):
+                    return <h6 key={id} className={f2.colour}>{label}</h6>
                     break;
-                case (score > f5.range && score <= f4.range):
-                    return <h5 key={id} className={f4.colour}>{label}</h5>
+                case (score > f2.range && score <= f3.range):
+                    return <h5 key={id} className={f3.colour}>{label}</h5>
                     break;
-                case (score > f4.range && score <= f3.range):
-                    return <h4 key={id} className={f3.colour}>{label}</h4>
+                case (score > f3.range && score <= f4.range):
+                    return <h4 key={id} className={f4.colour}>{label}</h4>
                     break;
-                case (score > f3.range && score <= f2.range):
-                    return <h3 key={id} className={f2.colour}>{label}</h3>
+                case (score > f4.range && score <= f5.range):
+                    return <h3 key={id} className={f5.colour}>{label}</h3>
                     break;
-                case (score > f2.range && score <= f1.range):
-                    return <h2 key={id} className={f1.colour}>{label}</h2>
+                case (score > f5.range && score <= f6.range):
+                    return <h2 key={id} className={f6.colour}>{label}</h2>
                     break;
             }            
         })
