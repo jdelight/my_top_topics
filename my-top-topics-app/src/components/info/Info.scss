@@ -1,0 +1,21 @@
+@import '../../scss/variables.scss';
+
+div.info {
+    height: 35vh;
+    width: 25rem;
+    background: $white;
+    border: 2px solid $orange;
+    border-radius: 10px;
+    box-shadow: -3px 6px 15px 0px $shadow;
+    padding: 20px;
+    margin: 125px auto 0 0;
+
+    h1 {
+        width: 100%;
+        text-align: center;
+        color: $orange;
+        -webkit-text-stroke: 1px $white;
+        text-shadow: 3px 2px 3px $shadow;
+        font-weight: bold;
+    }
+}

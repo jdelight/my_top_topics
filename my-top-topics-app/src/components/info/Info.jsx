@@ -1,11 +1,11 @@
 import React from 'react';
-import { Col } from 'react-bootstrap';
+import './Info.scss'
 
 const Info = props => {
     return (
-        <Col>
-
-        </Col>
+        <div className="info">
+            <h1>Info</h1>
+        </div>
     )
 }
 
