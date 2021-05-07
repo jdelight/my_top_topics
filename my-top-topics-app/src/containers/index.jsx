@@ -33,7 +33,7 @@ const TopTopics = props => {
             volume: data.volume,
             sentiment: data.sentiment,
         }
-        
+
         setInfo(requiredInfo)
     }
 
@@ -44,9 +44,9 @@ const TopTopics = props => {
             scores.push(score.sentimentScore)
         })
 
-        const topScore = Math.max(...scores),
-            fontRanges = [],
-            fontIncrement = topScore / 6;
+        const topScore = Math.max(...scores);
+        const fontRanges = [];
+        const fontIncrement = topScore / 6;
 
         for (let i = 1; i <= 6; i++) {
             let result = {
@@ -62,15 +62,15 @@ const TopTopics = props => {
         
         const wordsToRender = data.topics.map(data => {
 
-            const score = data.sentimentScore,
-                id = data.id,
-                label = data.label,
-                f1 = fontRanges[0],
-                f2 = fontRanges[1],
-                f3 = fontRanges[2],
-                f4 = fontRanges[3],
-                f5 = fontRanges[4],
-                f6 = fontRanges[5];
+            const score = data.sentimentScore;
+            const id = data.id;
+            const label = data.label;
+            const f1 = fontRanges[0];
+            const f2 = fontRanges[1];
+            const f3 = fontRanges[2];
+            const f4 = fontRanges[3];
+            const f5 = fontRanges[4];
+            const f6 = fontRanges[5];
 
             switch (true) {
                 case (score <= f1.range):
