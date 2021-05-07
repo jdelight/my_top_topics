@@ -3,11 +3,13 @@ import './Topics.scss';
 
 const Topics = props => {
 
+    const {title, wordCloud} = props;
+
     return (
         <div className="topics">
-            <h1>{props.title}</h1>
+            <h1>{title}</h1>
             <div>
-                {props.wordCloud}
+                {wordCloud}
             </div>
         </div> 
     )

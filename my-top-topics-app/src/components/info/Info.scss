@@ -1,7 +1,10 @@
 @import '../../scss/variables.scss';
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
 
 div.info {
-    height: 35vh;
+    height: auto;
     width: 25rem;
     background: $white;
     border: 2px solid $orange;
@@ -17,5 +20,35 @@ div.info {
         -webkit-text-stroke: 1px $white;
         text-shadow: 3px 2px 3px $shadow;
         font-weight: bold;
+    }
+
+    div.scores {
+        text-transform: capitalize;
+
+        span.total-volume {
+            font-weight: bold;
+        }
+
+        span.info-positive {
+            color: $green;
+            font-weight: bold;
+        }
+
+        span.info-neutral {
+            color: $grey;
+            font-weight: bold;
+        }
+
+        span.info-negative {
+            color: $red;
+            font-weight: bold;
+        }
+    }
+}
+
+@include media-breakpoint-only(xs) { 
+
+    div.info {
+        margin: 0;
     }
 }
