@@ -1,9 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Info.scss';
 
 const Info = props => {
 
-    const {title, information} = props;
+    const {
+        title, 
+        information
+    } = props;
 
     let data = {}
 
@@ -47,6 +51,15 @@ const Info = props => {
             }
         </React.Fragment>
     )
+}
+
+Info.propTypes = {
+    title: PropTypes.string,
+    wordCloud: PropTypes.object,
+}
+
+Info.defaultProps = {
+    title: 'Info'
 }
 
 export default Info;
