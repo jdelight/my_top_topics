@@ -12,7 +12,6 @@ const Info = props => {
     const data = {}
     const chartData = [];
 
-
     // set data for mentions and chart
     Object.entries(information).forEach(([key, value]) => {
         if (key === 'sentiment') {
@@ -42,7 +41,6 @@ const Info = props => {
             data[key] = value;
         }
     });
-
 
     // mentions feedback to be displayed
     const dataToDisaply = Object.entries(data).map(([key, value], index) => {
