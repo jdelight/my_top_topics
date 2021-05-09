@@ -2,16 +2,14 @@ div.info {
     height: auto;
     width: 25rem;
     background: $white;
-    border: 1px solid $orange;
     border-radius: 10px;
-    box-shadow: -3px 6px 15px 0px $shadow;
+    box-shadow: -2px 2px 5px 1px white;
     padding: 20px;
 
     h1 {
         width: 100%;
         text-align: center;
-        color: $orange;
-        -webkit-text-stroke: 1px $white;
+        color: $offBlack;
         text-shadow: 3px 2px 3px $shadow;
         font-weight: bold;
     }

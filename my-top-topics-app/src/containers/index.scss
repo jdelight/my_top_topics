@@ -1,6 +1,6 @@
 div.background {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background: url('../assets/images/nc.jpg') no-repeat center center;
     background-size: cover;
@@ -22,6 +22,16 @@ div.background {
             align-items: center;
             justify-content: flex-start;
             padding: 10px;
+        }
+    }
+}
+
+@include media-breakpoint-only(xs) { 
+
+    div.background {
+
+        div.col-12:nth-child(2) {
+            justify-content: center !important;
         }
     }
 }
