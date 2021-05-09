@@ -12,9 +12,12 @@ const Info = props => {
     const data = {}
     const chartData = [];
 
+
+    // set data for mentions and chart
     Object.entries(information).forEach(([key, value]) => {
         if (key === 'sentiment') {
             Object.entries(value).forEach(([key, value]) => {
+
                 const chart = {
                     name: key,
                     value: value    
@@ -41,6 +44,7 @@ const Info = props => {
     });
 
 
+    // mentions feedback to be displayed
     const dataToDisaply = Object.entries(data).map(([key, value], index) => {
         switch (key) {
             case 'label':
@@ -58,8 +62,6 @@ const Info = props => {
                 break;
         }
     });
-
-    console.log(1, chartData)
 
     return (
         <React.Fragment>

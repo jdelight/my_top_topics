@@ -2,7 +2,6 @@ div.topics {
     height: auto;
     width: 25rem;
     background: $white;
-    //border: 2px solid grey;
     border-radius: 10px;
     box-shadow: -2px 2px 5px 1px white;
     padding: 20px;
@@ -11,8 +10,6 @@ div.topics {
         width: 100%;
         text-align: center;
         color: $offBlack;
-        //-webkit-text-stroke: 2px white;
-        //text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         text-shadow: 3px 2px 3px $shadow;
         font-weight: bold;
     }
