@@ -1,0 +1,54 @@
+div.topics {
+    height: auto;
+    width: 25rem;
+    background: $white;
+    border-radius: 10px;
+    box-shadow: -2px 2px 5px 1px white;
+    padding: 20px;
+
+    h1 {
+        width: 100%;
+        text-align: center;
+        color: $offBlack;
+        text-shadow: 3px 2px 3px $shadow;
+        font-weight: bold;
+    }
+
+    > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        p, h6, h5, h4, h3, h2 {
+            text-align: center;
+            margin: 0;
+            padding: 5px 10px;
+            transition: transform .2s; /* Animation */
+
+            &:hover {
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+
+        p {
+            font-size: 0.75rem;
+        }
+
+        .positive {
+            color: $green;
+            font-weight: bold;
+        }
+
+        .negative {
+            color: $red;
+            font-weight: bold;
+        }
+
+        .neutral {
+            color: $grey;
+            font-weight: bold;
+        }
+    }
+}
