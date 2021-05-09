@@ -1,0 +1,37 @@
+div.background {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    background: url('../assets/images/nc.jpg') no-repeat center center;
+    background-size: cover;
+
+    div.row {
+        width: 100%;
+        align-items: center;
+        margin: 0;
+
+        div.col-12:first-child {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        div.col-12:nth-child(2) {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 10px;
+        }
+    }
+}
+
+@include media-breakpoint-only(xs) { 
+
+    div.background {
+
+        div.col-12:nth-child(2) {
+            justify-content: center !important;
+        }
+    }
+}
