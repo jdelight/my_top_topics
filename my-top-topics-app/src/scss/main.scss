@@ -1,0 +1,13 @@
+// DEPENDENCIES
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// STYLES
+@import './variables.scss';
+
+
+// COMPONENTS
+@import '../containers/index.scss';
+@import '../components/topics/Topics.scss';
+@import '../components/info/Info.scss';

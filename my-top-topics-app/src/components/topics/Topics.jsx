@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Topics.scss';
 
 const Topics = props => {
 
@@ -92,7 +91,7 @@ Topics.propTypes = {
 }
 
 Topics.defaultProps = {
-    title: 'My Topics Topics'
+    title: 'MY TOP TOPICS'
 }
 
 export default Topics;

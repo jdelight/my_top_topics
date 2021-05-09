@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Topics from '../components/topics/Topics';
 import Info from '../components/info/Info';
-import './index.scss';
 
 const TopTopics = () => {
 
@@ -45,7 +44,7 @@ const TopTopics = () => {
                 <div className="col-12 col-sm-6">
                     {typeof data.topics != 'undefined' &&
                         <Topics 
-                            title='My Top Topics'
+                            title='TOP EVENTS'
                             wordCloud={data.topics}
                             displayTopicData={displayInfo}
                         />
@@ -53,7 +52,7 @@ const TopTopics = () => {
                 </div>
                 <div className="col-12 col-sm-6">
                     <Info 
-                        title="Info"
+                        title="Feedback"
                         information={info}
                     />
                 </div>
